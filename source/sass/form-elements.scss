@@ -1,0 +1,34 @@
+.main-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: $white;
+  background-color: $violet;
+  padding: 10px 20px;
+  border-radius: 6px;
+
+  &:hover {
+    background-color: $ocean;
+  }
+
+  &:active {
+    background-color: $diamond;
+  }
+}
+
+.main-btn--pink {
+  background-color: $pink;
+  color: $violet;
+
+  &:hover {
+    background-color: $violet-secondary;
+  }
+
+  &:active {
+    background-color: $violet;
+    color: $white;
+  }
+}

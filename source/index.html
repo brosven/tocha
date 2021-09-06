@@ -1,17 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <title>Tocha</title>
-</head>
-<body>
-    <header class="page-header">
-        <a class="page-header__logo">
-            <img src="img/logo-tocha.png" width="95" height="30" class="page-header__logo-image" alt="Логотип точа">
-        </a>
+  </head>
+  <body>
+    <header class="page-header container">
+      <a class="page-header__logo">
+        <img
+          src="img/logo-tocha.svg"
+          width="95"
+          height="30"
+          class="page-header__logo-image"
+          alt="Логотип точа"
+        />
+      </a>
+      <nav class="main-nav page-header__nav">
+        <a href="#" class="main-nav__login main-btn main-btn--pink">Вход</a>
+        <a href="#" class="main-nav__registration main-btn">Регистрация</a>
+      </nav>
+      <button
+        type="button"
+        class="page-header__toggle"
+        aria-label="Кнопка открытия меню навигации"
+        tabindex="1"
+      >
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </header>
-</body>
+    <main class="page-main">
+      <h1 class="visually-hidden">Сервис tocha</h1>
+      <section class="announcement container">
+        <h2 class="visually-hidden">Подключение сервиса tocha</h2>
+        <p class="announcement__header">
+          <span class="announcement__header announcement__header--highlighted"
+            >Telegram чат</span
+          >
+          <br />
+          на вашем сайте
+        </p>
+        <p class="announcement__text">
+          Общение с клиентами станет простым и удобным, а подключение займёт
+          5 минут. <br />
+          Первый месяц —
+          <span class="announcement__text announcement__text--highlighted"
+            >бесплатно!</span
+          >
+        </p>
+
+        <a href="#" class="announcement__activation-link main-btn"
+          >Подключить</a
+        >
+      </section>
+      <section class="about-app container">
+        <h2 class="visually-hidden">Сервис Tocha Online</h2>
+        <p class="about-app__header">Tocha Online — это</p>
+
+        <div class="app-description about-app__item">
+          <p class="app-description__header">Ничего лишнего</p>
+          <p class="app-description__text">
+            Отсутствие лишних приложений для операторов. Оператору не нужно
+            учиться работать с чатом
+          </p>
+        </div>
+
+        <div
+          class="app-description app-description--simplicity about-app__item"
+        >
+          <p class="app-description__header">Простота</p>
+          <p class="app-description__text">Простая установка на сайт</p>
+        </div>
+
+        <div class="app-description app-description--assistant about-app__item">
+          <p class="app-description__header">Несколько ассистентов</p>
+          <p class="app-description__text">
+            Возможность подключения нескольких ассистентов
+          </p>
+        </div>
+
+        <div class="app-description app-description--customize about-app__item">
+          <p class="app-description__header">Кастомизация</p>
+          <p class="app-description__text">
+            Настройка интерфейса под нужды сайта
+          </p>
+        </div>
+      </section>
+      <section class="tariffs container">
+        <div class="tariffs__text-wrapper">
+          <h2 class="tariffs__header">Тарифы</h2>
+          <p class="tariffs__note">Стоимость зависит от трафика сайта</p>
+        </div>
+
+        <div class="card-tariff tariffs__card">
+          <p class="card-tariff__name">Бесплатно</p>
+          <div class="card-tariff__body">
+            <p class="card-tariff__header">Пробный период на 1 месяц</p>
+            <p class="card-tariff__text">0₽/первый месяц</p>
+            <a href="#" class="card-tariff__price-link main-btn"
+              >Подключить за 0₽</a
+            >
+          </div>
+        </div>
+
+        <div class="card-tariff tariffs__card">
+          <p class="card-tariff__name">Базовый</p>
+          <div class="card-tariff__body">
+            <p class="card-tariff__header">Менее 1000 посещений в сутки</p>
+            <p class="card-tariff__text">200₽/месяц</p>
+            <a href="#" class="card-tariff__price-link main-btn"
+              >Подключить за 200₽</a
+            >
+          </div>
+        </div>
+
+        <div class="card-tariff tariffs__card">
+          <p class="card-tariff__name">Премиум</p>
+          <div class="card-tariff__body">
+            <p class="card-tariff__header">Более 1000 посещений в сутки</p>
+            <p class="card-tariff__text">500₽/месяц</p>
+            <a href="#" class="card-tariff__price-link main-btn"
+              >Подключить за 500₽</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer"></footer>
+  </body>
+  <script>
+    const pageHeaderToggle = document.querySelector(".page-header__toggle");
+    const pageHeaderNav = document.querySelector(".page-header__nav");
+
+    const handleToggle = () => {
+      pageHeaderToggle.classList.toggle("page-header__toggle--opened");
+      pageHeaderNav.classList.toggle("page-header__nav--mobile-closed");
+    };
+
+    pageHeaderNav.classList.add("page-header__nav--mobile-closed");
+    pageHeaderToggle.addEventListener("click", handleToggle);
+  </script>
 </html>

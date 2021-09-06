@@ -1,0 +1,36 @@
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px 30px 115px;
+}
+
+.main-nav__login,
+.main-nav__registration {
+  width: 177px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    min-width: 230px;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-nav__login,
+  .main-nav__registration {
+    margin: 0;
+  }
+
+  .main-nav__login {
+    width: 76px;
+  }
+
+  .main-nav__registration {
+    width: 138px;
+  }
+}
