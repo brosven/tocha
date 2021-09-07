@@ -1,0 +1,50 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  background-color: $bg-gray;
+  background-image: url("../img/icon-quote.svg");
+  background-repeat: no-repeat;
+  background-position: 94% 2%;
+}
+
+.review__header {
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.review__card {
+  margin-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .review {
+    padding-top: 95px;
+    background-size: 16%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    background-position: 96% 6%;
+  }
+  .review__header {
+    font-size: 46px;
+    line-height: 64px;
+  }
+
+  .review__cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .review__card {
+    margin-right: 15px;
+  }
+}
