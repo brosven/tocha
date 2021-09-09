@@ -1,0 +1,33 @@
+.telegram-chat-list__header {
+  width: 165px;
+  font-size: 20px;
+  line-height: 30px;
+  color: $white;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.telegram-chat-list__item {
+  margin-bottom: 8px;
+}
+
+.telegram-chat-list__link {
+  cursor: pointer;
+}
+
+.telegram-chat-list__text {
+  width: 165px;
+  color: $white;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .telegram-chat-list__header {
+    margin-bottom: 32px;
+  }
+
+  .telegram-chat-list__item {
+    margin-bottom: 12px;
+  }
+}
