@@ -5,17 +5,17 @@
   padding-top: 60px;
   padding-bottom: 555px;
   background-image: url("../img/about-app.svg");
-  background-repeat: no-repeat;
   background-position: 50% 90%;
+  background-repeat: no-repeat;
   background-color: $bg-gray;
 }
 
 .about-app__header {
   width: 350px;
+  margin-bottom: 40px;
   font-weight: 800;
   font-size: 32px;
   line-height: 40px;
-  margin-bottom: 40px;
 }
 
 .about-app__item {
@@ -39,7 +39,7 @@
 
   .about-app__header {
     width: 500px;
-    font-size: 48px;
     margin-bottom: 70px;
+    font-size: 48px;
   }
 }

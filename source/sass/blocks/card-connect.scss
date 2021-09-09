@@ -1,15 +1,15 @@
 .card-connect {
-  width: 230px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 230px;
   padding: 88px 5px 450px;
-  box-sizing: border-box;
-  text-align: center;
   background-image: url("../img/connect-first.svg"),
     url("../img/icon-iphone-first.svg");
   background-position: 49% 0, 50% 100%;
   background-repeat: no-repeat;
+  text-align: center;
 }
 
 .card-connect--second {
@@ -23,9 +23,9 @@
 }
 
 .card-connect__header {
+  font-weight: 700;
   font-size: 18px;
   line-height: 28px;
-  font-weight: 700;
 }
 
 .card-connect__text {

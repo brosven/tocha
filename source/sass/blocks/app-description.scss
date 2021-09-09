@@ -3,21 +3,21 @@
   padding-left: 50px;
 
   &::before {
+    display: inline-block;
     position: absolute;
+    top: 30%;
+    right: 88%;
     width: 42px;
     height: 42px;
-    right: 88%;
-    top: 30%;
-    content: "";
-    display: inline-block;
     background-image: url("../img/icon-telegram.svg");
+    content: "";
   }
 }
 
 .app-description__header {
   width: 250px;
-  font-size: 20px;
   font-weight: 600;
+  font-size: 20px;
   line-height: 30px;
 }
 
@@ -26,13 +26,13 @@
 }
 
 .app-description--simplicity::before {
-  background-image: url("../img/icon-box.svg");
   top: 7%;
+  background-image: url("../img/icon-box.svg");
 }
 
 .app-description--assistant::before {
-  background-image: url("../img/icon-money.svg");
   top: 22%;
+  background-image: url("../img/icon-money.svg");
 }
 
 .app-description--customize::before {
@@ -60,8 +60,8 @@
 
   .app-description__header {
     width: 430px;
-    font-size: 24px;
     margin-bottom: 10px;
+    font-size: 24px;
   }
 
   .app-description__text {
@@ -70,12 +70,12 @@
   }
 
   .app-description::before {
-    width: 63px;
-    height: 63px;
     top: 15%;
     right: 87%;
-    background-repeat: no-repeat;
+    width: 63px;
+    height: 63px;
     background-size: contain;
+    background-repeat: no-repeat;
   }
 
   .app-description--simplicity::before {

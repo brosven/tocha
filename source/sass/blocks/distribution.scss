@@ -6,21 +6,21 @@
 .distribution__wrapper {
   width: 330px;
   min-height: 467px;
-  padding: 303px 28px 40px;
   margin: 0 auto;
-  background-color: $violet;
-  background-image: url("../img/bg-distribution.svg");
-  background-repeat: no-repeat;
-  background-position: 50% 25%;
+  padding: 303px 28px 40px;
   border-radius: 6px;
+  background-image: url("../img/bg-distribution.svg");
+  background-position: 50% 25%;
+  background-repeat: no-repeat;
+  background-color: $violet;
 }
 
 .distribution__header {
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 32px;
-  color: $white;
   margin-bottom: 15px;
+  color: $white;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
 }
 
 @media (min-width: $tablet-width) {
@@ -30,8 +30,8 @@
     padding: 47px 27px 85px 326px;
     background-image: url("../img/bg-distribution.svg"),
       url("../img/bg-mask-distribution.svg");
-    background-repeat: no-repeat;
     background-position: 7% 104%;
+    background-repeat: no-repeat;
   }
 }
 
@@ -45,8 +45,8 @@
   }
 
   .distribution__header {
+    margin-bottom: 32px;
     font-size: 33px;
     line-height: 41px;
-    margin-bottom: 32px;
   }
 }

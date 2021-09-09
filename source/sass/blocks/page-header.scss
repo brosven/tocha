@@ -1,10 +1,10 @@
 .page-header {
-  padding-top: 30px;
-  padding-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: $bg-gray;
 }
 
@@ -17,10 +17,10 @@
   order: 2;
   width: 32px;
   height: 18px;
-  background-color: transparent;
+  border: none;
   background-image: url("../img/icon-burger.svg");
   background-repeat: no-repeat;
-  border: none;
+  background-color: transparent;
   cursor: pointer;
 
   &:hover {
@@ -34,8 +34,8 @@
 
 .page-header__toggle--opened {
   background-image: url("../img/icon-cross.svg");
-  background-size: contain;
   background-position: 50%;
+  background-size: contain;
 }
 
 .page-header__nav {

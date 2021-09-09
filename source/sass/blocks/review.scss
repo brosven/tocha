@@ -4,17 +4,17 @@
   align-items: center;
   padding-top: 70px;
   padding-bottom: 50px;
-  background-color: $bg-gray;
   background-image: url("../img/icon-quote.svg");
-  background-repeat: no-repeat;
   background-position: 94% 2%;
+  background-repeat: no-repeat;
+  background-color: $bg-gray;
 }
 
 .review__header {
+  margin-bottom: 40px;
+  font-weight: 800;
   font-size: 32px;
   line-height: 40px;
-  font-weight: 800;
-  margin-bottom: 40px;
 }
 
 .review__card {
@@ -30,11 +30,11 @@
 }
 
 .review__swiper-wrapper {
-  flex-direction: row;
   box-sizing: border-box;
+  flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: flex-start;
   align-items: center;
+  justify-content: flex-start;
 }
 
 @media (min-width: $tablet-width) {

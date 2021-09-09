@@ -1,21 +1,21 @@
 .page-footer {
-  width: $mobile-width;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: $mobile-width;
+  margin: 0 auto;
   padding-top: 60px;
   background-color: $text-black;
-  margin: 0 auto;
 }
 
 .page-footer__copyright {
   width: $mobile-width;
   padding: 25px 40px;
+  background-color: $bg-copyright;
+  color: $white;
   font-size: 14px;
   line-height: 24px;
-  color: $white;
-  background-color: $bg-copyright;
 }
 
 .page-footer__telegram-chat-list {
