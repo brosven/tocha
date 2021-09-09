@@ -25,6 +25,12 @@
   margin-bottom: 45px;
 }
 
+.connect__swiper-wrapper {
+  flex-direction: row;
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+}
+
 @media (min-width: $tablet-width) {
   .connect__header {
     width: 491px;
@@ -33,6 +39,11 @@
   .connect__steps-wrapper {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .connect__swiper-wrapper {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
   }
 }
 
