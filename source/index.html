@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.min.css" />
     <title>Tocha</title>
   </head>
@@ -94,39 +98,42 @@
           <p class="tariffs__note">Стоимость зависит от трафика сайта</p>
         </div>
 
-        <div class="tariffs__cards-wrapper">
-          <div class="card-tariff tariffs__card">
-            <p class="card-tariff__name">Бесплатно</p>
-            <div class="card-tariff__body">
-              <p class="card-tariff__header">Пробный период на 1 месяц</p>
-              <p class="card-tariff__text">0₽/первый месяц</p>
-              <a href="#" class="card-tariff__price-link main-btn"
-                >Подключить за 0₽</a
-              >
+        <div class="tariffs__swiper swiper">
+          <div class="tariffs__cards-wrapper swiper-wrapper">
+            <div class="card-tariff tariffs__card tariffs__slide swiper-slide">
+              <p class="card-tariff__name">Бесплатно</p>
+              <div class="card-tariff__body">
+                <p class="card-tariff__header">Пробный период на 1 месяц</p>
+                <p class="card-tariff__text">0₽/первый месяц</p>
+                <a href="#" class="card-tariff__price-link main-btn"
+                  >Подключить за 0₽</a
+                >
+              </div>
             </div>
-          </div>
 
-          <div class="card-tariff tariffs__card">
-            <p class="card-tariff__name">Базовый</p>
-            <div class="card-tariff__body">
-              <p class="card-tariff__header">Менее 1000 посещений в сутки</p>
-              <p class="card-tariff__text">200₽/месяц</p>
-              <a href="#" class="card-tariff__price-link main-btn"
-                >Подключить за 200₽</a
-              >
+            <div class="card-tariff tariffs__card tariffs__slide swiper-slide">
+              <p class="card-tariff__name">Базовый</p>
+              <div class="card-tariff__body">
+                <p class="card-tariff__header">Менее 1000 посещений в сутки</p>
+                <p class="card-tariff__text">200₽/месяц</p>
+                <a href="#" class="card-tariff__price-link main-btn"
+                  >Подключить за 200₽</a
+                >
+              </div>
             </div>
-          </div>
 
-          <div class="card-tariff tariffs__card">
-            <p class="card-tariff__name">Премиум</p>
-            <div class="card-tariff__body">
-              <p class="card-tariff__header">Более 1000 посещений в сутки</p>
-              <p class="card-tariff__text">500₽/месяц</p>
-              <a href="#" class="card-tariff__price-link main-btn"
-                >Подключить за 500₽</a
-              >
+            <div class="card-tariff tariffs__card tariffs__slide swiper-slide">
+              <p class="card-tariff__name">Премиум</p>
+              <div class="card-tariff__body">
+                <p class="card-tariff__header">Более 1000 посещений в сутки</p>
+                <p class="card-tariff__text">500₽/месяц</p>
+                <a href="#" class="card-tariff__price-link main-btn"
+                  >Подключить за 500₽</a
+                >
+              </div>
             </div>
           </div>
+          <div class="tariffs__pagination swiper-pagination"></div>
         </div>
       </section>
 
@@ -135,89 +142,103 @@
         <p class="connect__header">
           Всего 3 шага для подключения Telegram чата
         </p>
-        <div class="connect__steps-wrapper">
-          <div class="card-connect connect__card">
-            <p class="card-connect__header">Telegram bot</p>
-            <p class="card-connect__text">
-              Вы создаёте Telegram бота для вашего сайта
-            </p>
-          </div>
+        <div class="connect__swiper swiper">
+          <div class="connect__steps-wrapper swiper-wrapper">
+            <div class="card-connect connect__card swiper-slide">
+              <p class="card-connect__header">Telegram bot</p>
+              <p class="card-connect__text">
+                Вы создаёте Telegram бота для вашего сайта
+              </p>
+            </div>
 
-          <div
-            class="
-              card-connect card-connect--second
-              connect__card connect__card--second
-            "
-          >
-            <p class="card-connect__header">Подключение Tocha</p>
-            <p class="card-connect__text">
-              Tocha подключает Telegram бота к вашиму сайту
-            </p>
-          </div>
+            <div
+              class="
+                card-connect card-connect--second
+                connect__card connect__card--second
+                swiper-slide
+              "
+            >
+              <p class="card-connect__header">Подключение Tocha</p>
+              <p class="card-connect__text">
+                Tocha подключает Telegram бота к вашиму сайту
+              </p>
+            </div>
 
-          <div class="card-connect card-connect--third connect__card">
-            <p class="card-connect__header">Telegram-чат</p>
-            <p class="card-connect__text">
-              Консультант отвечает на вопросы посетителей сайта
-            </p>
+            <div
+              class="
+                card-connect card-connect--third
+                connect__card
+                swiper-slide
+              "
+            >
+              <p class="card-connect__header">Telegram-чат</p>
+              <p class="card-connect__text">
+                Консультант отвечает на вопросы посетителей сайта
+              </p>
+            </div>
           </div>
+          <div class="connect__pagination swiper-pagination"></div>
         </div>
       </section>
 
       <section class="review container">
         <h2 class="review__header">Отзывы клиентов</h2>
-        <div class="review__cards-wrapper">
-          <div class="card-review review__card">
-            <div class="card-review__body">
-              <p class="card-review__header">Как же удобно!</p>
-              <p class="card-review__text">
-                В рамках спецификации современных стандартов, базовые сценарии
-                поведения пользователей, которые представляют собой яркий пример
-                континентально-европейского типа политической культуры, будут
-                преданы социально-демократической анафеме.
-              </p>
-            </div>
-            <div class="card-review__person">
-              <img
-                class="card-review__person-image"
-                width="56"
-                height="56"
-                src="img/review-anna.png"
-                alt="Аватар пользователя Анна Купер"
-              />
-              <div class="card-review__person-information">
-                <p class="card-review__person-name">Анна Купер</p>
-                <p class="card-review__person-email">romashka.ru</p>
-              </div>
-            </div>
-          </div>
 
-          <div class="card-review review__card">
-            <div class="card-review__body">
-              <p class="card-review__header">
-                Теперь мы идем в ногу со временем
-              </p>
-              <p class="card-review__text">
-                А ещё интерактивные прототипы превращены в посмешище, хотя само
-                их существование приносит несомненную пользу обществу.
-                Банальные, но неопровержимые выводы, а также тщательные
-                исследования конкурентов формируют сеть.
-              </p>
+        <div class="review__swiper swiper">
+          <div class="review__cards-wrapper swiper-wrapper">
+            <div class="card-review review__card swiper-slide">
+              <div class="card-review__body">
+                <p class="card-review__header">Как же удобно!</p>
+                <p class="card-review__text">
+                  В рамках спецификации современных стандартов, базовые сценарии
+                  поведения пользователей, которые представляют собой яркий
+                  пример континентально-европейского типа политической культуры,
+                  будут преданы социально-демократической анафеме.
+                </p>
+              </div>
+              <div class="card-review__person">
+                <img
+                  class="card-review__person-image"
+                  width="56"
+                  height="56"
+                  src="img/review-anna.png"
+                  alt="Аватар пользователя Анна Купер"
+                />
+                <div class="card-review__person-information">
+                  <p class="card-review__person-name">Анна Купер</p>
+                  <p class="card-review__person-email">romashka.ru</p>
+                </div>
+              </div>
             </div>
-            <div class="card-review__person">
-              <img
-                class="card-review__person-image"
-                width="56"
-                height="56"
-                src="img/review-andrey.png"
-                alt="Аватар пользователя Андрей Васильев"
-              />
-              <div class="card-review__person-information">
-                <p class="card-review__person-name">Андрей Васильев</p>
-                <p class="card-review__person-email">samogon-ont.ru</p>
+
+            <div class="card-review review__card swiper-slide">
+              <div class="card-review__body">
+                <p class="card-review__header">
+                  Теперь мы идем в ногу со временем
+                </p>
+                <p class="card-review__text">
+                  А ещё интерактивные прототипы превращены в посмешище, хотя
+                  само их существование приносит несомненную пользу обществу.
+                  Банальные, но неопровержимые выводы, а также тщательные
+                  исследования конкурентов формируют сеть.
+                </p>
+              </div>
+              <div class="card-review__person">
+                <img
+                  class="card-review__person-image"
+                  width="56"
+                  height="56"
+                  src="img/review-andrey.png"
+                  alt="Аватар пользователя Андрей Васильев"
+                />
+                <div class="card-review__person-information">
+                  <p class="card-review__person-name">Андрей Васильев</p>
+                  <p class="card-review__person-email">samogon-ont.ru</p>
+                </div>
               </div>
             </div>
           </div>
+          <div class="review__pagination swiper-pagination"></div>
         </div>
       </section>
       <section class="distribution container">
@@ -324,6 +345,67 @@
 
       pageHeaderNav.classList.add("page-header__nav--mobile-closed");
       pageHeaderToggle.addEventListener("click", handleToggle);
+    </script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+      function addSwiperClass(block, blocksClass) {
+        return document.querySelector(block).classList.add(blocksClass);
+      }
+
+      addSwiperClass(".tariffs__cards-wrapper", "tariffs__swiper-wrapper");
+      const tarriffsSwiper = new Swiper(".tariffs__swiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: ".tariffs__pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          1210: {
+            slidesPerView: 3,
+          },
+        },
+      });
+
+      addSwiperClass(".connect__steps-wrapper", "connect__swiper-wrapper");
+      const connectSwiper = new Swiper(".connect__swiper", {
+        slidesPerView: 1.5,
+        spaceBetween: 20,
+        pagination: {
+          el: ".connect__pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2,
+          },
+          1210: {
+            slidesPerView: 3,
+          },
+        },
+      });
+
+      addSwiperClass(".review__cards-wrapper", "review__swiper-wrapper");
+      const reviewSwiper = new Swiper(".review__swiper", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        pagination: {
+          el: ".review__pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 1.2,
+          },
+          1210: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+          },
+        },
+      });
     </script>
   </body>
 </html>
