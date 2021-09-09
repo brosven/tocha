@@ -11,4 +11,4 @@ build/
 npm-debug.*
 source/css/*.css
 source/css/*.map
-Thumbs.db
+Thumbs.db.DS_Store
